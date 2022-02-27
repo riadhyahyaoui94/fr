@@ -25,4 +25,6 @@ private String photo;
 private Categorie categorie;
 @OneToMany(mappedBy = "produit")
 private List<MvtStock> mvtStocks;
+@ManyToOne
+    private GrandSurface grandSurface;
 }
